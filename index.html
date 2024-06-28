@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="di">
+        <h2 class="h2">TRAVEL RESERVATION FORM</h2><br>
+        <h4 class="h4"><sup style="color: red;"></sup> denotes mandatory</h4>
+        <form class="div" action="welcome Aj.html" onsubmit="return get()">
+            <label>Full name<sup style="color: red;">*</sup>:</label><br>
+            <input id="fname" type="text" name="full_name" placeholder="FirstName LastName" value=""><br>
+            <label>Email address<sup style="color: red;">*</sup></label><br>
+            <input id="ema" type="text" name="email_addr" value=""><br>
+            <label>Select Tour Package<sup style="color: red;">*</sup></label><br>
+            <select id="pack" name="package">
+                <option hidden value="">select your option</option>
+                <option value="Goa">Goa</options>
+                <option value="Kashmir">Kashmir</options>
+                <option value="Rajasthan">Rajasthan</options>
+            </select><br>
+            <label>Arrival date<sup style="color: red;">*</sup></label><br>
+            <input id="date" type="date"><br>
+            <label>Number of persons<sup style="color: red;">*</sup></label><br>
+            <input id="np" type="text" name="persons" value="" s><br>
+            <label>What would you want to avail?</label> <br>
+            Boarding<input id="boar" type="checkbox" name="aj" value="boarding"><br>
+            Fooding<input id="food" type="checkbox" name="aj" value="fooding"><br>
+            Sight seeing<input id="ss" type="checkbox" name="aj" value="sightseeing"><br>
+            <label>Discount Coupon code:</label><br>
+            <input type="text" name="dis_code" value=""><br>
+            <label>Terms and conditions<sup style="color: red;">*</sup></label><br>
+            <input id="ia" type="radio" name="t" value="agree">i agree
+            <input id="id" type="radio" name="t" value="disagree">i disagree<br><br>
+            <input type="submit" value="complete reservation">
+        </form>
+    </div>
+    <script src="js/fval2.js"></script>
+</body>
+
+</html>
